@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
- * main -  a program that prints all possible different
- * combinations of three digits.
+ * main - a program that prints all possible combinations
+ * of two two-digit numbers.
  * Return: 0 (Success)
  */
 int main(void)
 {
 	int x;
 	int y;
-				
-	for (x = 0; x < 100; x++)
+
+	for (x = 0; x < 99; x++)
 	{
 		for (y = 0; y < 100; y++)
 		{
@@ -18,7 +18,7 @@ int main(void)
 				putchar((x / 10) + 48);
 				putchar((x % 10) + 48);
 				putchar(' ');
-				putchar((x / 10) + 48);
+				putchar((y / 10) + 48);
 				putchar((y % 10) + 48);
 				if (x != 98 || y != 99)
 				{
@@ -26,7 +26,6 @@ int main(void)
 					putchar(' ');
 				}
 			}
-			
 		}
 	}
 	putchar('\n');
