@@ -16,6 +16,6 @@ void rev_string(char *s)
 		printf("%c", s[i]);
 		/*_putchar(s[i]);*/
 	}
+	*s = '\0';
 	/*_putchar('\n');*/
-	printf("\n");
 }
