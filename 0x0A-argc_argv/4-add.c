@@ -17,6 +17,8 @@ int main(int argc, char *argv[])
 	{
 		printf("%d\n", 0);
 	}
+	else
+	{
 		for (i = 1; i < argc; i++)
 		{
 			if (atoi(argv[i]) != 0)
@@ -29,6 +31,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
+	}
 	printf("%d\n", res);
 	return (0);
 }
