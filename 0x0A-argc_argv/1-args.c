@@ -9,12 +9,6 @@
  */
 int main(int argc,  __attribute__((unused)) char *argv[])
 {
-	/*int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("%d\n", argc);
-	}*/
 	printf("%d\n", --argc);
 	return (0);
 }
