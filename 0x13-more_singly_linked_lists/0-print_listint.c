@@ -7,10 +7,10 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *ptr_list;
-	size_t counter;
+	const listint_t *ptr_e;
+	size_t tot;
 
-	for (ptr_list = h, counter = 0; ptr_list != NULL; counter++, ptr_list = ptr_list->next)
-		printf("%d\n", ptr_list->n);
-	return (counter);
+	for (ptr_e = h, tot = 0; ptr_e != NULL; tot++, ptr_e = ptr_e->next)
+		printf("%d\n", ptr_e->n);
+	return (tot);
 }
