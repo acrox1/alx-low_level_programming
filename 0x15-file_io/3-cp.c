@@ -30,7 +30,7 @@ int main(int ac, char *av[])
 	output_file = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, mode);
 	if (output_file == -1)
 		dprintf(SE, "Error: Can't write to %s\n", av[2]), exit(99);
-	do{
+	do {
 		input_status = read(input_file, buffer, MAXSIZE);
 		if (input_status == -1)
 		{
